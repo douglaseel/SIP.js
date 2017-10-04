@@ -43,7 +43,7 @@ DTMF = function(session, tone, options) {
   }
 
   // Check tone value
-  if (!tone.match(/^[0-9A-D#*]$/)) {
+  if (!tone.match(/^[0-9A-DF#*]$/)) {
     throw new TypeError('Invalid tone: '+ tone);
   } else {
     this.tone = tone;
